@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Global Gallery | PM Global Solutions</title>
+    <meta name="description" content="Project gallery for PM Global Solutions. Explore innovative, energy-efficient building solutions and completed projects using EPS Cement Sandwich Panels across South Africa.">
+    <meta name="keywords" content="PM Global Solutions, gallery, construction, EPS Cement Sandwich Panels, South Africa, building projects, sustainable, energy efficient">
+    <meta name="author" content="PM Global Solutions (Pty) Ltd">
+    <meta property="og:title" content="PM Global Gallery | PM Global Solutions">
+    <meta property="og:description" content="Explore our gallery of innovative, energy-efficient building projects across South Africa.">
+    <meta property="og:image" content="https://pmglobalsolutions.co.za/assets/nbk-longlogo.png">
+    <meta property="og:url" content="https://pmglobalsolutions.co.za/gallery.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PM Global Gallery | PM Global Solutions">
+    <meta name="twitter:description" content="Explore our gallery of innovative, energy-efficient building projects across South Africa.">
+    <meta name="twitter:image" content="https://pmglobalsolutions.co.za/assets/nbk-longlogo.png">
+    <link rel="canonical" href="https://pmglobalsolutions.co.za/gallery.html">
+    <link rel="stylesheet" href="stylesg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PM Global Solutions (Pty) Ltd",
+  "url": "https://pmglobalsolutions.co.za/",
+  "logo": "https://pmglobalsolutions.co.za/assets/nbk-longlogo.png",
+  "description": "Gallery for pmglobal solutions. Innovative, energy-efficient building solutions using EPS Cement Sandwich Panels for homes, schools, warehouses, and hotels across South Africa.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+27 71 309 2244",
+    "contactType": "customer service",
+    "email": "phuti@pmglobalsolutions.co.za"
+  },
+  "sameAs": [
+    "https://facebook.com/",
+    "https://instagram.com/",
+    "https://linkedin.com/"
+  ]
+}
+</script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/nbk-longlogo.png" alt="PM Global Solutions Logo" class="logo-img">
+            </a>
+
+            <!-- Replace the SVG home icon link with this Font Awesome icon link -->
+            <a href="index.html" class="home-icon" aria-label="Home" title="Home">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="page-title">— Project Gallery</h2>
+            
+            <!-- Dropdown Menu -->
+            <div class="gallery-dropdown-container">
+                <label for="gallery-category" class="visually-hidden">Choose a category</label>
+                <select id="gallery-category">
+                    
+                    
+                    <option value="private">Highend Private Home</option>
+                    <option value="mpumalanga">Mpumalanga</option>
+                    <option value="settlement">Settlement- 30M2</option>
+                    <option value="walkup">Walk-up Accommodation</option>
+                    <option value="water">Dep. Water & Sanitation</option>
+                    <option value="serengeti">Serengeti Golf Estate</option>
+                    <option value="zulu">Zulu Royal</option>
+                </select>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Images will be dynamically loaded here -->
+            </div>
+        </div>
+    </main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+        <div class="footer-copy">
+            &copy; 2024 PM Global Solutions (Pty) Ltd. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent-banner hidden">
+        <div class="container cookie-container">
+            <p>We use cookies to improve your experience. By continuing to browse, you agree to our use of cookies. Read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+            <button class="cta-button cookie-accept-btn">Accept</button>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal (place before </body>) -->
+    <div id="lightbox" class="lightbox hidden">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next" id="lightbox-next">&#10095;</button>
+    </div>
+
+    <script>
+const galleryData = {
+    water: [
+        { src: "assets/gallery/depwater/depwater.png", alt: "Dep. Water & Sanitation", title: "Dep. Water & Sanitation" },
+        { src: "assets/gallery/depwater/depwater1.png", alt: "Dep. Water & Sanitation 1", title: "Dep. Water & Sanitation" },
+        { src: "assets/gallery/depwater/depwater2.png", alt: "Dep. Water & Sanitation 2", title: "Dep. Water & Sanitation" },
+        { src: "assets/gallery/depwater/depwater3.png", alt: "Dep. Water & Sanitation 3", title: "Dep. Water & Sanitation" },
+        { src: "assets/gallery/depwater/depwater4.png", alt: "Dep. Water & Sanitation 4", title: "Dep. Water & Sanitation" },
+        { src: "assets/gallery/depwater/depwater5.png", alt: "Dep. Water & Sanitation 5", title: "Dep. Water & Sanitation" }
+    ],
+    walkup: [
+        { src: "assets/gallery/walkup/walkup1.png", alt: "Walk-up Accommodation 1", title: "Walk-up Accommodation" },
+        { src: "assets/gallery/walkup/walkup2.png", alt: "Walk-up Accommodation 2", title: "Walk-up Accommodation" },
+        { src: "assets/gallery/walkup/walkup3.png", alt: "Walk-up Accommodation 3", title: "Walk-up Accommodation" },
+        { src: "assets/gallery/walkup/walkup4.png", alt: "Walk-up Accommodation 4", title: "Walk-up Accommodation" },
+        { src: "assets/gallery/walkup/walkup5.png", alt: "Walk-up Accommodation 5", title: "Walk-up Accommodation" },
+        { src: "assets/gallery/walkup/walkup6.png", alt: "Walk-up Accommodation 6", title: "Walk-up Accommodation" }
+    ],
+    private: [
+        { src: "assets/gallery/highend/highend1.png", alt: "Highend Private Home 1", title: "Highend Private Home" },
+        { src: "assets/gallery/highend/highend2.png", alt: "Highend Private Home 2", title: "Highend Private Home" },
+        { src: "assets/gallery/highend/highend3.png", alt: "Highend Private Home 3", title: "Highend Private Home" },
+        { src: "assets/gallery/highend/highend4.png", alt: "Highend Private Home 4", title: "Highend Private Home" },
+        { src: "assets/gallery/highend/highend5.png", alt: "Highend Private Home 5", title: "Highend Private Home" },
+        { src: "assets/gallery/highend/highend6.png", alt: "Highend Private Home 6", title: "Highend Private Home" },
+        { src: "assets/gallery/highend/highend7.png", alt: "Highend Private Home 7", title: "Highend Private Home" },
+        { src: "assets/gallery/highend/highend8.png", alt: "Highend Private Home 8", title: "Highend Private Home" }
+    ],
+    mpumalanga: [
+        { src: "assets/gallery/mpumalanga/mpumalanga1.png", alt: "Human Settlement- Mpumalanga 1", title: "Human Settlement- Mpumalanga" },
+        { src: "assets/gallery/mpumalanga/mpumalanga2.png", alt: "Human Settlement- Mpumalanga 2", title: "Human Settlement- Mpumalanga" },
+        { src: "assets/gallery/mpumalanga/mpumalanga3.png", alt: "Human Settlement- Mpumalanga 3", title: "Human Settlement- Mpumalanga" },
+        { src: "assets/gallery/mpumalanga/mpumalanga4.png", alt: "Human Settlement- Mpumalanga 4", title: "Human Settlement- Mpumalanga" },
+        { src: "assets/gallery/mpumalanga/mpumalanga5.png", alt: "Human Settlement- Mpumalanga 5", title: "Human Settlement- Mpumalanga" },
+        { src: "assets/gallery/mpumalanga/mpumalanga6.png", alt: "Human Settlement- Mpumalanga 6", title: "Human Settlement- Mpumalanga" }
+    ],
+    settlement: [
+        { src: "assets/gallery/settlement/settlement1.png", alt: "Human Settlement- 30M2 1", title: "Human Settlement- 30M2" },
+        { src: "assets/gallery/settlement/settlement2.png", alt: "Human Settlement- 30M2 2", title: "Human Settlement- 30M2" },
+        { src: "assets/gallery/settlement/settlement3.png", alt: "Human Settlement- 30M2 3", title: "Human Settlement- 30M2" },
+        { src: "assets/gallery/settlement/settlement4.png", alt: "Human Settlement- 30M2 4", title: "Human Settlement- 30M2" },
+        { src: "assets/gallery/settlement/settlement5.png", alt: "Human Settlement- 30M2 5", title: "Human Settlement- 30M2" }
+    ],
+    serengeti: [
+        { src: "assets/gallery/serengeti/serengeti1.png", alt: "Serengeti Golf Estate 1", title: "Serengeti Golf Estate" },
+        { src: "assets/gallery/serengeti/serengeti2.png", alt: "Serengeti Golf Estate 2", title: "Serengeti Golf Estate" },
+        { src: "assets/gallery/serengeti/serengeti3.png", alt: "Serengeti Golf Estate 3", title: "Serengeti Golf Estate" },
+        { src: "assets/gallery/serengeti/serengeti4.png", alt: "Serengeti Golf Estate 4", title: "Serengeti Golf Estate" },
+        { src: "assets/gallery/serengeti/serengeti5.png", alt: "Serengeti Golf Estate 5", title: "Serengeti Golf Estate" },
+        { src: "assets/gallery/serengeti/serengeti6.png", alt: "Serengeti Golf Estate 6", title: "Serengeti Golf Estate" },
+        { src: "assets/gallery/serengeti/serengeti7.png", alt: "Serengeti Golf Estate 7", title: "Serengeti Golf Estate" }
+    ],
+    zulu: [
+        { src: "assets/gallery/zulu/zulu1.png", alt: "Zulu Royal 1", title: "Zulu Royal" },
+        { src: "assets/gallery/zulu/zulu2.png", alt: "Zulu Royal 2", title: "Zulu Royal" },
+        { src: "assets/gallery/zulu/zulu3.png", alt: "Zulu Royal 3", title: "Zulu Royal" },
+        { src: "assets/gallery/zulu/zulu4.png", alt: "Zulu Royal 4", title: "Zulu Royal" },
+        { src: "assets/gallery/zulu/zulu5.png", alt: "Zulu Royal 5", title: "Zulu Royal" }
+    ]
+};
+
+let currentImages = [];
+let currentIndex = 0;
+
+function openLightbox(images, index) {
+    currentImages = images;
+    currentIndex = index;
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    const caption = document.getElementById('lightbox-caption');
+    img.src = images[index].src;
+    img.alt = images[index].alt;
+    caption.textContent = images[index].title;
+    lightbox.classList.remove('hidden');
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.add('hidden');
+}
+
+function showLightboxImage(index) {
+    if (!currentImages.length) return;
+    currentIndex = (index + currentImages.length) % currentImages.length;
+    const img = document.getElementById('lightbox-img');
+    const caption = document.getElementById('lightbox-caption');
+    img.src = currentImages[currentIndex].src;
+    img.alt = currentImages[currentIndex].alt;
+    caption.textContent = currentImages[currentIndex].title;
+}
+
+function addGalleryItemListeners(images) {
+    document.querySelectorAll('.gallery-item img').forEach((img, idx) => {
+        img.addEventListener('click', () => openLightbox(images, idx));
+    });
+}
+
+function renderGallery(category) {
+    const grid = document.getElementById('gallery-grid');
+    grid.innerHTML = '';
+    const images = galleryData[category];
+    if (!images) return;
+    images.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'gallery-item';
+        div.innerHTML = `
+            <img src="${item.src}" alt="${item.alt}">
+            <div class="gallery-overlay">
+                <h3>${item.title}</h3>
+            </div>
+        `;
+        grid.appendChild(div);
+    });
+    addGalleryItemListeners(images);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('gallery-category');
+    renderGallery(select.value);
+    select.addEventListener('change', e => renderGallery(e.target.value));
+
+    document.getElementById('lightbox-close').onclick = closeLightbox;
+    document.getElementById('lightbox-prev').onclick = () => showLightboxImage(currentIndex - 1);
+    document.getElementById('lightbox-next').onclick = () => showLightboxImage(currentIndex + 1);
+
+    document.getElementById('lightbox').addEventListener('click', e => {
+        if (e.target === e.currentTarget) closeLightbox();
+    });
+    document.addEventListener('keydown', e => {
+        if (document.getElementById('lightbox').classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showLightboxImage(currentIndex - 1);
+        if (e.key === 'ArrowRight') showLightboxImage(currentIndex + 1);
+    });
+});
+</script>
+</body>
+</html>
