@@ -574,3 +574,115 @@ html {
     .lightbox-close { top: 12px; right: 14px; font-size: 2rem; }
     .lightbox-prev, .lightbox-next { font-size: 1.5rem; padding: 6px 12px; }
 }
+
+/* Breaking News Ribbon */
+.breaking-news-ribbon {
+    width: 100%;
+    background: linear-gradient(90deg, #fff 0%, #879778 100%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.breaking-news-label {
+    background: #fff;
+    color: #1C2833;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-size: 0.98em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    z-index: 2;
+    position: relative;
+}
+
+.breaking-news-content {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.breaking-news-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: breakingNewsScroll 18s linear infinite;
+    will-change: transform;
+}
+
+.breaking-news-text {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 10px;
+    margin-right: 30px;
+    position: relative;
+    z-index: 1;
+    -webkit-mask-image: linear-gradient(
+        to left,
+        transparent 0%,
+        #000 20%,
+        #000 90%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to left,
+        transparent 0%,
+        #000 20%,
+        #000 90%,
+        transparent 100%
+    );
+}
+
+.breaking-news-banners {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 36px;
+}
+.breaking-news-banners img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    max-width: 90px;
+    display: block;
+    margin-right: 10px;
+}
+
+@keyframes breakingNewsScroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .breaking-news-banners {
+        gap: 6px;
+        height: 22px;
+    }
+    .breaking-news-banners img {
+        height: 18px;
+        max-width: 50px;
+        padding: 1px 2px;
+    }
+}
