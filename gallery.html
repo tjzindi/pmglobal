@@ -61,23 +61,20 @@
             
             <!-- Dropdown Menu -->
             <div class="gallery-dropdown-container">
-                <label for="gallery-category" class="visually-hidden">Choose a category</label>
-                <select id="gallery-category">
-                    
-                    
-                    <option value="private">Highend Private Home</option>
-                    <option value="mpumalanga">Mpumalanga</option>
-                    <option value="settlement">Settlement- 30M2</option>
-                    <option value="walkup">Walk-up Accommodation</option>
-                    <option value="water">Dep. Water & Sanitation</option>
-                    <option value="serengeti">Serengeti Golf Estate</option>
-                    <option value="zulu">Zulu Royal</option>
-                </select>
-            </div>
+    <label for="gallery-category" class="visually-hidden">Choose a category</label>
+    <select id="gallery-category">
+        <option value="luxury">High-end Luxury Homes</option>
+        <option value="mpumalanga">Informal Settlement Upgrading Program</option>
+        <option value="settlement">Disaster & Emergency Response</option>
+        <option value="walkup">Walk-up Accommodation</option>
+        <option value="water">Low-end Development</option>
+        <option value="zulu">Zulu Royal Housing</option>
+    </select>
+</div>
 
-            <div class="gallery-grid" id="gallery-grid">
-                <!-- Images will be dynamically loaded here -->
-            </div>
+<div class="gallery-grid" id="gallery-grid">
+    <!-- Images will be dynamically loaded here -->
+</div>
 
             <!-- Breaking News Ribbon -->
             <div class="breaking-news-ribbon">
@@ -86,12 +83,10 @@
                     <div class="breaking-news-track">
                         <span class="breaking-news-text">PM Global Solutions has worked with:</span>
                         <div class="breaking-news-banners">
-                            <img src="assets/banner/agrementsa.png" alt="Agrément SA">
+                           
                             <img src="assets/banner/hsmp.png" alt="HSMP">
                             <img src="assets/banner/hssa.png" alt="HSSA">
                             <img src="assets/banner/mpaffairs.png" alt="Mpumalanga Affairs">
-                            <img src="assets/banner/nhbrc.png" alt="NHBRC">
-                            <img src="assets/banner/sasfa.png" alt="SASFA">
                             <img src="assets/banner/wateraffairs.png" alt="Water Affairs">
                             <img src="assets/banner/zuluroyal.png" alt="Zulu Royal">
                         </div>
@@ -138,13 +133,70 @@
 
     <script>
 const galleryData = {
-    water: [
-        { src: "assets/gallery/depwater/depwater.png", alt: "Dep. Water & Sanitation", title: "Dep. Water & Sanitation" },
-        { src: "assets/gallery/depwater/depwater1.png", alt: "Dep. Water & Sanitation 1", title: "Dep. Water & Sanitation" },
-        { src: "assets/gallery/depwater/depwater2.png", alt: "Dep. Water & Sanitation 2", title: "Dep. Water & Sanitation" },
-        { src: "assets/gallery/depwater/depwater3.png", alt: "Dep. Water & Sanitation 3", title: "Dep. Water & Sanitation" },
-        { src: "assets/gallery/depwater/depwater4.png", alt: "Dep. Water & Sanitation 4", title: "Dep. Water & Sanitation" },
-        { src: "assets/gallery/depwater/depwater5.png", alt: "Dep. Water & Sanitation 5", title: "Dep. Water & Sanitation" }
+    luxury: [
+        // Highend Private Home images
+        { src: "assets/gallery/highend-housing/highend1.png", alt: "High-End Luxury Home 1", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend2.png", alt: "High-End Luxury Home 2", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend3.png", alt: "High-End Luxury Home 3", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend4.png", alt: "High-End Luxury Home 4", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend5.png", alt: "High-End Luxury Home 5", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend6.png", alt: "High-End Luxury Home 6", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend7.png", alt: "High-End Luxury Home 7", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend8.png", alt: "High-End Luxury Home 8", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend9.jpeg", alt: "High-End Luxury Home 9", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend10.jpeg", alt: "High-End Luxury Home 10", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend11.jpeg", alt: "High-End Luxury Home 11", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend12.jpeg", alt: "High-End Luxury Home 12", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend13.jpeg", alt: "High-End Luxury Home 13", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend14.jpeg", alt: "High-End Luxury Home 14", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend15.jpeg", alt: "High-End Luxury Home 15", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend16.jpeg", alt: "High-End Luxury Home 16", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend17.jpeg", alt: "High-End Luxury Home 17", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend18.jpeg", alt: "High-End Luxury Home 18", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend19.jpeg", alt: "High-End Luxury Home 19", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend20.jpeg", alt: "High-End Luxury Home 20", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/highend-housing/highend21.jpeg", alt: "High-End Luxury Home 21", title: "High-End Luxury Homes" },
+        // Serengeti Golf Estate images
+        { src: "assets/gallery/serengeti/serengeti1.png", alt: "High-End Luxury Home (Serengeti) 1", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/serengeti/serengeti2.png", alt: "High-End Luxury Home (Serengeti) 2", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/serengeti/serengeti3.png", alt: "High-End Luxury Home (Serengeti) 3", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/serengeti/serengeti4.png", alt: "High-End Luxury Home (Serengeti) 4", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/serengeti/serengeti5.png", alt: "High-End Luxury Home (Serengeti) 5", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/serengeti/serengeti6.png", alt: "High-End Luxury Home (Serengeti) 6", title: "High-End Luxury Homes" },
+        { src: "assets/gallery/serengeti/serengeti7.png", alt: "High-End Luxury Home (Serengeti) 7", title: "High-End Luxury Homes" }
+    ],
+    mpumalanga: [
+        { src: "assets/gallery/informal-upgrade/mpumalanga1.png", alt: "Informal Settlement Upgrading Program 1", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga2.png", alt: "Informal Settlement Upgrading Program 2", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga3.png", alt: "Informal Settlement Upgrading Program 3", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga4.png", alt: "Informal Settlement Upgrading Program 4", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga5.png", alt: "Informal Settlement Upgrading Program 5", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga6.png", alt: "Informal Settlement Upgrading Program 6", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga7.jpeg", alt: "Informal Settlement Upgrading Program 7", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga8.jpeg", alt: "Informal Settlement Upgrading Program 8", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga9.jpeg", alt: "Informal Settlement Upgrading Program 9", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga10.jpeg", alt: "Informal Settlement Upgrading Program 10", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga11.jpeg", alt: "Informal Settlement Upgrading Program 11", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga12.jpeg", alt: "Informal Settlement Upgrading Program 12", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga13.jpeg", alt: "Informal Settlement Upgrading Program 13", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga14.jpeg", alt: "Informal Settlement Upgrading Program 14", title: "Informal Settlement Upgrading Program" },
+        { src: "assets/gallery/informal-upgrade/mpumalanga15.jpeg", alt: "Informal Settlement Upgrading Program 15", title: "Informal Settlement Upgrading Program" }
+    ],
+    settlement: [
+        { src: "assets/gallery/disaster-response/settlement1.png", alt: "Disaster & Emergency Response 1", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/settlement2.png", alt: "Disaster & Emergency Response 2", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/settlement3.png", alt: "Disaster & Emergency Response 3", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/settlement4.png", alt: "Disaster & Emergency Response 4", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/settlement5.png", alt: "Disaster & Emergency Response 5", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic.jpeg", alt: "clinic", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic1.jpeg", alt: "clinic1", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic2.jpeg", alt: "clinic2", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic3.jpeg", alt: "clinic3", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic4.jpeg", alt: "clinic4", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic5.jpeg", alt: "clinic5", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic6.jpeg", alt: "clinic6", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic7.jpeg", alt: "clinic7", title: "Disaster & Emergency Response" },
+        { src: "assets/gallery/disaster-response/clinic8.jpeg", alt: "clinic8", title: "Disaster & Emergency Response" }        
     ],
     walkup: [
         { src: "assets/gallery/walkup/walkup1.png", alt: "Walk-up Accommodation 1", title: "Walk-up Accommodation" },
@@ -154,46 +206,36 @@ const galleryData = {
         { src: "assets/gallery/walkup/walkup5.png", alt: "Walk-up Accommodation 5", title: "Walk-up Accommodation" },
         { src: "assets/gallery/walkup/walkup6.png", alt: "Walk-up Accommodation 6", title: "Walk-up Accommodation" }
     ],
-    private: [
-        { src: "assets/gallery/highend/highend1.png", alt: "Highend Private Home 1", title: "Highend Private Home" },
-        { src: "assets/gallery/highend/highend2.png", alt: "Highend Private Home 2", title: "Highend Private Home" },
-        { src: "assets/gallery/highend/highend3.png", alt: "Highend Private Home 3", title: "Highend Private Home" },
-        { src: "assets/gallery/highend/highend4.png", alt: "Highend Private Home 4", title: "Highend Private Home" },
-        { src: "assets/gallery/highend/highend5.png", alt: "Highend Private Home 5", title: "Highend Private Home" },
-        { src: "assets/gallery/highend/highend6.png", alt: "Highend Private Home 6", title: "Highend Private Home" },
-        { src: "assets/gallery/highend/highend7.png", alt: "Highend Private Home 7", title: "Highend Private Home" },
-        { src: "assets/gallery/highend/highend8.png", alt: "Highend Private Home 8", title: "Highend Private Home" }
-    ],
-    mpumalanga: [
-        { src: "assets/gallery/mpumalanga/mpumalanga1.png", alt: "Human Settlement- Mpumalanga 1", title: "Human Settlement- Mpumalanga" },
-        { src: "assets/gallery/mpumalanga/mpumalanga2.png", alt: "Human Settlement- Mpumalanga 2", title: "Human Settlement- Mpumalanga" },
-        { src: "assets/gallery/mpumalanga/mpumalanga3.png", alt: "Human Settlement- Mpumalanga 3", title: "Human Settlement- Mpumalanga" },
-        { src: "assets/gallery/mpumalanga/mpumalanga4.png", alt: "Human Settlement- Mpumalanga 4", title: "Human Settlement- Mpumalanga" },
-        { src: "assets/gallery/mpumalanga/mpumalanga5.png", alt: "Human Settlement- Mpumalanga 5", title: "Human Settlement- Mpumalanga" },
-        { src: "assets/gallery/mpumalanga/mpumalanga6.png", alt: "Human Settlement- Mpumalanga 6", title: "Human Settlement- Mpumalanga" }
-    ],
-    settlement: [
-        { src: "assets/gallery/settlement/settlement1.png", alt: "Human Settlement- 30M2 1", title: "Human Settlement- 30M2" },
-        { src: "assets/gallery/settlement/settlement2.png", alt: "Human Settlement- 30M2 2", title: "Human Settlement- 30M2" },
-        { src: "assets/gallery/settlement/settlement3.png", alt: "Human Settlement- 30M2 3", title: "Human Settlement- 30M2" },
-        { src: "assets/gallery/settlement/settlement4.png", alt: "Human Settlement- 30M2 4", title: "Human Settlement- 30M2" },
-        { src: "assets/gallery/settlement/settlement5.png", alt: "Human Settlement- 30M2 5", title: "Human Settlement- 30M2" }
-    ],
-    serengeti: [
-        { src: "assets/gallery/serengeti/serengeti1.png", alt: "Serengeti Golf Estate 1", title: "Serengeti Golf Estate" },
-        { src: "assets/gallery/serengeti/serengeti2.png", alt: "Serengeti Golf Estate 2", title: "Serengeti Golf Estate" },
-        { src: "assets/gallery/serengeti/serengeti3.png", alt: "Serengeti Golf Estate 3", title: "Serengeti Golf Estate" },
-        { src: "assets/gallery/serengeti/serengeti4.png", alt: "Serengeti Golf Estate 4", title: "Serengeti Golf Estate" },
-        { src: "assets/gallery/serengeti/serengeti5.png", alt: "Serengeti Golf Estate 5", title: "Serengeti Golf Estate" },
-        { src: "assets/gallery/serengeti/serengeti6.png", alt: "Serengeti Golf Estate 6", title: "Serengeti Golf Estate" },
-        { src: "assets/gallery/serengeti/serengeti7.png", alt: "Serengeti Golf Estate 7", title: "Serengeti Golf Estate" }
+    water: [
+        { src: "assets/gallery/lowend-housing/depwater.png", alt: "Low-end Development", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/depwater1.png", alt: "Low-end Development 1", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/depwater2.png", alt: "Low-end Development 2", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/depwater3.png", alt: "Low-end Development 3", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/depwater4.png", alt: "Low-end Development 4", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/depwater5.png", alt: "Low-end Development 5", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost-lsf.jpeg", alt: "Low-cost LSF", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost-lsf1.jpeg", alt: "Low-cost LSF 1", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost-lsf2.jpeg", alt: "Low-cost LSF 2", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost-lsf3.jpeg", alt: "Low-cost LSF 3", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost-lsf4.jpeg", alt: "Low-cost LSF 4", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost-lsf5.jpeg", alt: "Low-cost LSF 5", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost.jpeg", alt: "Lowcost", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost2.jpeg", alt: "Lowcost 2", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost3.jpeg", alt: "Lowcost 3", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost4.jpeg", alt: "Lowcost 4", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost5.jpeg", alt: "Lowcost 5", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost6.jpeg", alt: "Lowcost 6", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost7.jpeg", alt: "Lowcost 7", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost8.jpeg", alt: "Lowcost 8", title: "Low-end Development" },
+        { src: "assets/gallery/lowend-housing/lowcost9.jpeg", alt: "Lowcost 9", title: "Low-end Development" }
     ],
     zulu: [
-        { src: "assets/gallery/zulu/zulu1.png", alt: "Zulu Royal 1", title: "Zulu Royal" },
-        { src: "assets/gallery/zulu/zulu2.png", alt: "Zulu Royal 2", title: "Zulu Royal" },
-        { src: "assets/gallery/zulu/zulu3.png", alt: "Zulu Royal 3", title: "Zulu Royal" },
-        { src: "assets/gallery/zulu/zulu4.png", alt: "Zulu Royal 4", title: "Zulu Royal" },
-        { src: "assets/gallery/zulu/zulu5.png", alt: "Zulu Royal 5", title: "Zulu Royal" }
+        { src: "assets/gallery/zulu-royal/zulu1.png", alt: "Zulu Royal Housing 1", title: "Zulu Royal Housing" },
+        { src: "assets/gallery/zulu-royal/zulu2.png", alt: "Zulu Royal Housing 2", title: "Zulu Royal Housing" },
+        { src: "assets/gallery/zulu-royal/zulu3.png", alt: "Zulu Royal Housing 3", title: "Zulu Royal Housing" },
+        { src: "assets/gallery/zulu-royal/zulu4.png", alt: "Zulu Royal Housing 4", title: "Zulu Royal Housing" },
+        { src: "assets/gallery/zulu-royal/zulu5.png", alt: "Zulu Royal Housing 5", title: "Zulu Royal Housing" },
+        { src: "assets/gallery/zulu-royal/zulu6.png", alt: "Zulu Royal Housing 6", title: "Zulu Royal Housing" }
     ]
 };
 

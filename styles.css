@@ -1372,3 +1372,51 @@ label.required::after {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Add to styles.css */
+.association-section {
+  text-align: center;
+  padding: 48px 0 32px 0;
+}
+.association-section h2 {
+  margin-bottom: 16px;
+}
+.association-section p {
+  margin-bottom: 28px;
+  font-size: 1.1rem;
+}
+.association-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.association-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  padding: 8px 16px;
+}
+@media (max-width: 600px) {
+  .association-logo {
+    height: 48px;
+    padding: 4px 8px;
+  }
+  .association-logos {
+    gap: 16px;
+  }
+}
+
+.association-divider {
+  width: 100%;
+  height: 4px;
+  margin: 50px 0 0 0;
+  background: linear-gradient(to right, #879778 0%, rgba(135,151,120,0.12) 100%);
+  border: none;
+  border-radius: 3px;
+  opacity: 0.85;
+}
